@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TCAS | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://library-management.com/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="https://library-management.com/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://library-management.com/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"/>
+    <style>
+        .callout {
+            border-radius: .5rem;
+            /* box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%); */
+            background-color: #fff;
+            border-left: 5px solid #e9ecef;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+        }
+
+        .closeCallout {
+            outline: 0 !important;
+        }
+        .b-lr-1{
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;}
+    </style>
+    <script src="https://library-management.com/front/js/vendor/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('body').on('click', 'button.closeCallout', function () {
+                $(this).parent().parent().remove();
+            });
+        });
+
+    </script>
+</head>
+<body
+    class="hold-transition login-page  ">
+<div
+    class="login-box  ">
+    <div class="login-logo ">
+        <a href="#">TCAS</a>
+    </div>
+    <!-- /.login-logo -->
+    
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Fill in your email id a reset link will be sent to your email id.</p>
+                        <form method="POST" action="https://library-management.com/password/email">
+                <input type="hidden" name="_token" value="MQe9rkhvwCSRU8jBMbIt37GoYWf8b8dDypTtFih6">
+                <div class="input-group mb-3">
+                    <input id="email" type="email" class="form-control "
+                           name="email" value="" required autocomplete="email" autofocus
+                           placeholder="Enter Email Id To Receive Reset Link">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope-o"></span>
+                        </div>
+                    </div>
+                                    </div>
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit"
+                                class="btn btn-dark btn-block"> Send Password Reset Link</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+                    </div>
+        <!-- /.login-card-body -->
+    </div>
+
+
+
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="https://library-management.com/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="https://library-management.com/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="https://library-management.com/js/adminlte.min.js"></script>
+
+</body>
+</html>
+ 
